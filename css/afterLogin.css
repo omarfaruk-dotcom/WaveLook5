@@ -1,0 +1,175 @@
+body {
+    font-size: large;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(94, 32, 65);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+img{
+    border-radius: 1rem;
+}
+
+.head {
+    background-color: rgb(186, 88, 88);
+    border-radius: 10px;
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    position: relative;
+}
+.details {
+    margin: 25px;
+    margin-left: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.searchdiv {
+    width: 300px;
+    height: 40px;
+    background-color: aliceblue;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    margin-right: 50px;
+    border-radius: 2rem;
+}
+.searchdiv form {
+    display: flex;
+    margin-top: 0;
+}
+
+.searchdiv button img {
+    border-radius: 0;
+    margin-top: 6px;
+    margin-right: 15px;
+    height: 25px;
+}
+
+.searchdiv input {
+    height: 40px;
+    width: 100%;
+}
+
+.searchdiv input,
+button {
+    text-align: center;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.searchdiv button {
+    height: 40px;
+}
+
+.ad{
+    border-radius: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.productSection {
+    background-color: rgb(222, 201, 176);
+    width: 100%;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    overflow-y: hidden;
+    cursor: grab;
+    margin: 10px;
+}
+
+.products div {
+    margin: 10px;
+    border-radius: 1rem;
+    background-color: bisque;
+    width: 50%;
+}
+
+.products div img {
+    margin: 1rem;
+    height: 15rem;
+    width: 11rem;
+}
+
+.products div button {
+    width: 100px;
+    height: auto;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+.footer {
+    text-align: center;
+    font-size: 15px;
+    gap: 20px;
+    height: 4rem;
+    position: relative;
+    background-color: cornflowerblue;
+    width: 100%;
+}
+
+.footer-links {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: cornflowerblue;
+}
+
+@media (max-width: 991px) {
+    
+    .head {
+        background-color: rgb(186, 88, 88);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .searchdiv{
+        margin-right: 0;
+    }
+    .products {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        background-color: aliceblue;
+        border-radius: 1rem;
+        overflow-y: hidden;
+        cursor: grab;
+        margin: 10px;
+    }
+    .products div {
+        margin-left: 10px;
+        width: 1000px;
+    }
+    .products div img {
+        margin: 1rem ;
+        height: 200px;
+        width: 150px; 
+    }
+    .products div button {
+        width: 100px;
+        height: auto;
+        border: 3px solid red;
+        border-radius: 10px;
+    }
+}
